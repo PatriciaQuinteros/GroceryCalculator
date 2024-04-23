@@ -1,0 +1,220 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{
+background-color: #CFD955;
+font-family: 'FlowersSunday';
+}
+
+@font-face {
+  font-family:FlowersSunday;
+  src: url(fonts/FlowersSunday-WyDeA.otf);
+  font-weight: bold;
+}
+
+h2{
+  margin: 3px;
+
+}
+#add-item{
+     border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+     border-radius: 20px;
+     font-family: FlowersSunday;
+     width: 30%;
+     padding: 10px;
+     margin: 10px;
+     margin-bottom: 20px;
+     background-color:  #B89248; 
+     color: #EBEAC2;
+      font-size: large;
+      cursor: pointer;
+}
+
+#add-item:hover{
+  background-color: #F5C52A;
+}
+
+#clear{
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+ border-radius: 20px;
+ font-family: FlowersSunday;
+ width: 30%;
+ padding: 10px;
+ margin: 10px;
+ margin-bottom: 20px;
+ background-color:  #B89248; 
+ color: #EBEAC2;
+  font-size: large;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#clear:hover{
+
+  background-color: #F5C52A;
+}
+
+#delete{
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+ border-radius: 20px;
+ font-family: FlowersSunday;
+ width: 10%;
+ padding: 10px;
+ background-color:  #B89248; 
+ color: #EBEAC2;
+  font-size: small;
+  cursor: pointer;
+
+
+}
+
+#update{
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+ border-radius: 20px;
+ font-family: FlowersSunday;
+ width: 10%;
+ padding: 5px;
+ background-color:  #B89248; 
+ color: #EBEAC2;
+  font-size: small;
+  cursor: pointer;
+float: right;
+margin: 20px;
+
+
+}
+
+#groceryheader{
+  text-align: center; 
+  color: #FFE919;
+  font-size: 70px;
+   text-shadow: 2px 2px  #DBC000;
+   margin-bottom:-10px;
+   margin-top: -10px;
+   align-content: center;
+
+
+}
+
+
+.flex-container{
+   display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 50px;
+    align-content: center;
+ 
+}
+
+.flex-item-left {
+     width:80% ;
+     background-color: #D9BC55;
+    text-align: center; 
+    color:#B89248; 
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #D9AC55;
+    border-color: #D9AC55;
+    border-style: solid;
+  
+   
+  }
+  
+  .flex-item-right { 
+    width: 80%;
+    background-color: #D9BC55;
+    color: #B89248;  
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #D9AC55;
+    overflow: auto;
+    border-color: #D9AC55;
+    border-style: solid;
+   
+   
+  }
+
+
+    input[type=text] {
+      
+      border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+     border-radius: 10px;
+     font-family: FlowersSunday;
+     width: 80%;
+     padding: 10px;
+     margin: 8px;
+     background-color: #EBEAC2;
+    
+    }
+    
+
+   input[type=number]{
+    border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+     border-radius: 10px;
+     font-family: FlowersSunday;
+     width: 80%;
+     padding: 10px;
+     margin: 8px;
+     background-color: #EBEAC2;
+    }
+
+
+#item-list li {
+  display: flex;
+  list-style-type: none; 
+  background-color: #EBEAC2;
+  padding: 50x;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-left: -15px;
+  
+}
+
+
+
+
+
+
+
+  
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+  
+  /* Media query for screens 600 pixels and smaller */
+@media only screen and (max-width: 600px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+/* Media query for screens 768 pixels and smaller */
+@media only screen and (max-width: 768px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+/* Media query for screens 1024 pixels and smaller */
+@media only screen and (max-width: 1024px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
+
+

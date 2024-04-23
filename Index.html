@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<body>
+   <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     </head>
+     
+ <header><h1 id="groceryheader">Grocery Calculator</h1></header>
+
+
+ <div class="flex-container">
+     <div class="flex-item-left">
+         <h2 id="GroceryItem">Enter Grocery Item</h2>
+ 
+         <input type="text" id="item" placeholder="Item name" />
+          <input type="number" id="quantity" placeholder="Quantity" />
+         <input type="number" id="price" placeholder="Price" />
+         <button id="add-item" onclick="addItem()">Add Item</button>
+   
+       </div> <!--FLEX LEFT DIV-->
+  
+      <div class="flex-item-right">
+         <h2 >Grocery List</h2>
+
+         <ul id="item-list"> </ul>
+        <div id="total">Total: $<span id="total-amount">0.00</span></div>	
+         <button id="clear" onclick="clearItems()">Clear</button>
+      </div> <!--FLEX RIGHT DIV-->
+    
+  
+  
+  </div> <!--FLEX CONTAINER-->
+
+
+
+
+
+  <footer>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
